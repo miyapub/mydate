@@ -5,14 +5,17 @@ module.exports={
     setTime:function(t){
         var strT=t+'';
         if(strT.length===10){
-            if(myObject.setObj(t).isNumber()){
+            if(myObject.setObj(parseInt(t)).isNumber()){
                 _timestamp=t;
             }
         }
         return this;
     },
+    getTimestamp:function(){
+        return Math.round(new Date().getTime()/1000);
+    },
     getTime:function(){
-        var time = new Date(parseInt(_timestamp));
+        var time = new Date(parseInt(_timestamp)*1000);
         var y = time.getFullYear();
         var m = time.getMonth() + 1;
         var d = time.getDate();
