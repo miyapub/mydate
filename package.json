@@ -1,0 +1,22 @@
+{
+  "name": "mydate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyapub/mydate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miyapub/mydate/issues"
+  },
+  "homepage": "https://github.com/miyapub/mydate#readme",
+  "dependencies": {
+    "myobject": "^1.0.0"
+  }
+}
